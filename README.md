@@ -8,6 +8,11 @@ Feel free to clone this repo.
 ### Algorithms
 
 - sumZero
+- binarySearch
+- charCount
+- linearSearch
+- countUniqueValues
+- recursion
 
 ### Data Structures
 
