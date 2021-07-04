@@ -1,4 +1,13 @@
+/*
+  Where can factorials go wrong:
+    1 - No base case.
+    2 - Forgetting to return or returning the wrong thing.
+    3 - Avoid stack overflow at all costs.
+*/
+
+// factorial is a good function to apply recursion
 function factorial(num) {
+  // look out for edge cases
   if (num < 0) {
     console.log('Non-negative numbers only!');
     return false;
