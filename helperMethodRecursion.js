@@ -18,7 +18,7 @@
 */
 
 // example of helper method recursion
-function colledctOdds(arr) {
+function collectOdds(arr) {
   let odds = [];
 
   function collector(nums) {
@@ -40,6 +40,6 @@ function colledctOdds(arr) {
   return odds;
 }
 
-// console.log(colledctOdds([1, 4, 653, 123, 22, 65, 34, 867]));
-console.log(colledctOdds([1, 2, 3, -123]));
-// console.log(colledctOdds([]));
+// console.log(collectOdds([1, 4, 653, 123, 22, 65, 34, 867]));
+console.log(collectOdds([1, 2, 3, -123]));
+// console.log(collectOdds([]));
