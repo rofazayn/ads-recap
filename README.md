@@ -14,6 +14,7 @@ Feel free to clone this repo.
 - countUniqueValues
 - recursion
 - helperMethodRecursion
+- pureRecursion
 
 ### Data Structures
 
