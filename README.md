@@ -13,6 +13,7 @@ Feel free to clone this repo.
 - linearSearch
 - countUniqueValues
 - recursion
+- helperMethodRecursion
 
 ### Data Structures
 
