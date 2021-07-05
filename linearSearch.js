@@ -17,4 +17,8 @@ function linearSearch(arr, val) {
   return -1;
 }
 
+// best case scenario: O(1)
+// worst case scenario: O(n)
+// average case scenario: O(n)
+
 console.log(linearSearch([4, 9, 2, 1, 5, 0], 5));
