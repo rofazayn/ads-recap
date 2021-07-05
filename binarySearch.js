@@ -46,5 +46,9 @@ function binarySearch(sortedArray, val) {
   return -1;
 }
 
+// best case scenario: O(1)
+// worst case scenario: O(log(n))
+// average case scenario: O(log(n))
+
 console.log(binarySearch([1, 3, 6, 9, 11, 32, 56, 87], 32));
 // console.log(binarySearch([1, 3, 6, 9, 11, 32, 56, 87], 99));
