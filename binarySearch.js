@@ -29,13 +29,10 @@ function binarySearch(sortedArray, val) {
 
   // we use while to loop through the array
   while (sortedArray[middle] !== val && min <= max) {
-    if (val < sortedArray[middle]) {
-      // if the searched value is too small move the right pointer to the left
-      max = middle - 1;
-    } else if (val > sortedArray[middle]) {
-      // if the searched value is too large move the left pointer to the right
-      min = middle + 1;
-    }
+    // if the searched value is too small move the right pointer to the left
+    if (val < sortedArray[middle]) max = middle - 1;
+    // if the searched value is too large move the left pointer to the right
+    else min = middle + 1;
     // reset the middle
     middle = Math.floor((min + max) / 2);
   }
@@ -49,8 +46,5 @@ function binarySearch(sortedArray, val) {
   return -1;
 }
 
-// best case scenario: O(1)
-// worst case scenario: O(log(n))
-// average case scenario: O(log(n))
-
-console.log(binarySearch([1, 3, 6, 9, 11, 32, 56, 87], 9));
+console.log(binarySearch([1, 3, 6, 9, 11, 32, 56, 87], 32));
+// console.log(binarySearch([1, 3, 6, 9, 11, 32, 56, 87], 99));
