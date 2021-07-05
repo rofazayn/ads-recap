@@ -1,8 +1,14 @@
 /*
-  - Write a function that accepts and array and a value
-  - Loop through the array and check if the current array element is equal to the value
-  - If it is, returh the index at which the element is found
-  - If the value is never found, return -1
+  Linear Search (most common search algorithm):
+  - Eliminates one item at a time (you have to loop throughout every single item).
+  - Array can be whatever.
+  - Really bad for large data chunks.
+
+  Pseudocode:
+  - Write a function that accepts and array and a value.
+  - Loop through the array and check if the current array element is equal to the value.
+  - If it is, returh the index at which the element is found.
+  - If the value is never found, return -1.
 */
 
 function linearSearch(arr, val) {
