@@ -1,0 +1,9 @@
+{
+  "name": "ads-recap",
+  "version": "1.0.0",
+  "description": "This repo is a recap of data structures and algorithms in JavaScript.",
+  "main": "index.js",
+  "repository": "git@github.com:rofazayn/ads-recap.git",
+  "author": "Abderraouf Zine <rofazayn@gmail.com> (https://github.com/rofazayn)",
+  "license": "MIT"
+}
