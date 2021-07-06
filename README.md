@@ -15,6 +15,7 @@ Feel free to clone this repo.
 - recursion
 - helperMethodRecursion
 - pureRecursion
+- stringSearch
 
 ### Data Structures
 
