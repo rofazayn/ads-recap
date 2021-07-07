@@ -16,6 +16,7 @@ Feel free to clone this repo.
 - helperMethodRecursion
 - pureRecursion
 - stringSearch
+- bubbleSort
 
 ### Data Structures
 
