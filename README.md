@@ -17,6 +17,7 @@ Feel free to clone this repo.
 - pureRecursion
 - stringSearch
 - bubbleSort
+- selectionSort
 
 ### Data Structures
 
