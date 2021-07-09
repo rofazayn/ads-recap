@@ -1,7 +1,7 @@
 # Algorithms & Data Structures Recap
 
 This repo is all about recapping algorithms and data structures in javascript.
-Feel free to clone this repo.
+Feel free to clone it.
 
 ## List of contents
 
@@ -18,6 +18,7 @@ Feel free to clone this repo.
 - stringSearch
 - bubbleSort
 - selectionSort
+- insertionSort
 
 ### Data Structures
 
