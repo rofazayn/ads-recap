@@ -6,7 +6,7 @@
   Pseudocode:
   - Store the first item value as the minimum.
   - Compare this item to the next items in the array until you find another minimum.
-  - If you find a smaller number, designate that smaller number to bethe new min.
+  - If you find a smaller number, designate that smaller number to be the new min.
   - If the minimum's index is not the value's index you began with, swap the two values.
   - Repeat this with the next element until the array is sorted.
 */
