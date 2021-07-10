@@ -54,8 +54,8 @@ function bubbleSort(arr) {
 }
 
 // best case scenario: O(n)
-// worst case scenario: O(log(n^2))
-// average case scenario: O(log(n^2))
+// worst case scenario: O(n^2)
+// average case scenario: O(n^2)
 
 // console.log(bubbleSort([]));
 // console.log(bubbleSort([1, 15, 767, 23, 3, 5, 25, 237]));
