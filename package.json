@@ -5,5 +5,11 @@
   "main": "index.js",
   "repository": "git@github.com:rofazayn/ads-recap.git",
   "author": "Abderraouf Zine <rofazayn@gmail.com> (https://github.com/rofazayn)",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
 }
