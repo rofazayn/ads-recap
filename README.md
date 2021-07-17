@@ -22,4 +22,4 @@ Feel free to clone it.
 
 ### Data Structures
 
-- Empty for now
+- singlyLinkedList
