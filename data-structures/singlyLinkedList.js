@@ -22,6 +22,7 @@ class SinglyLinkedList {
     this.tail = null;
   }
 
+  // this methods adds an item to the singly linked list
   push(val) {
     let newNode = new Node(val);
     if (!this.head) {
