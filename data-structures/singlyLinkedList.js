@@ -22,7 +22,7 @@ class SinglyLinkedList {
     this.tail = null;
   }
 
-  // this methods adds an item to the singly linked list
+  // this method adds an item to the singly linked list
   push(val) {
     let newNode = new Node(val);
     if (!this.head) {
@@ -35,6 +35,34 @@ class SinglyLinkedList {
     this.length++;
     return this;
   }
+
+  pop() {
+    // if the list is empty return undefined
+    if (!this.head) return undefined;
+
+    let current = this.head;
+    let newTail = current;
+
+    while (current.next) {
+      newTail = current;
+      current = current.next;
+    }
+
+    // console.log('pop current', current.val);
+    // console.log('pop new tail', newTail.val);
+
+    // replace tail with new tail
+    this.tail = newTail;
+    this.tail.next = null;
+    this.length--;
+    // if the list gets empty do this
+    if (this.length === 0) {
+      this.head = null;
+      this.tail = null;
+    }
+    // return the popped item;
+    return current;
+  }
 }
 
 let list = new SinglyLinkedList();
@@ -42,3 +70,4 @@ list.push('First value');
 list.push('Second value');
 list.push('Third value');
 console.log('list', list);
+console.log(list.pop());
