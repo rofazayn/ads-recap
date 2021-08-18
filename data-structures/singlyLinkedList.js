@@ -63,11 +63,28 @@ class SinglyLinkedList {
     // return the popped item;
     return current;
   }
+
+  // shift or remove first item in list
+  shift() {
+    if (!this.head) {
+      return undefined;
+    }
+
+    let currentHead = this.head;
+    this.head = currentHead.next;
+    this.length--;
+
+    // if last item in list is shifted then nullify the list
+    if (this.length === 0) {
+      this.head = null;
+      this.tail = null;
+    }
+
+    return currentHead;
+  }
 }
 
 let list = new SinglyLinkedList();
 list.push('First value');
 list.push('Second value');
 list.push('Third value');
-console.log('list', list);
-console.log(list.pop());
