@@ -132,6 +132,29 @@ class SinglyLinkedList {
 
     return false;
   }
+
+  insert(idx, val) {
+    // handle edge cases
+    // check if can be in list
+    if (idx < 0 || idx > this.length) return false;
+    // if idx is 0 we just unshift the list with new node
+    if (idx === 0) return !!this.unshift(val);
+    // if idx is equal to list length the we push node
+    if (idx === this.length) return !!this.push(val);
+
+    // otherwise we create a node and we properly set it in list
+    let newNode = new Node(val);
+    // find the node at the given index - 1
+    let prev = this.find(idx - 1);
+    // store node at the given index in memory
+    let temp = prev.next;
+    // point the prev's next to the inserted node
+    prev.next = newNode;
+    // point the inserted node's next to temp
+    newNode.next = temp;
+
+    return true;
+  }
 }
 
 // create a singly linked list
