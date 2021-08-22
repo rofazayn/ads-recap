@@ -101,9 +101,38 @@ class SinglyLinkedList {
 
     return this;
   }
+
+  get(idx) {
+    // check if index is in range
+    if (idx < 0 || idx >= length) return null;
+
+    // use a counter to reach needed node
+    let counter = 0;
+    let current = this.head;
+
+    // loop through list until you reach node with specified index
+    while (idx !== counter) {
+      current = current.next();
+      counter++;
+    }
+
+    // return the node
+    return current;
+  }
+
+  set(idx, val) {
+    // find node
+    let node = this.get(idx);
+
+    // if node exists update its value
+    if (node) {
+      node.val = val;
+      return true;
+    }
+
+    return false;
+  }
 }
 
+// create a singly linked list
 let list = new SinglyLinkedList();
-list.push('First value');
-list.push('Second value');
-list.push('Third value');
