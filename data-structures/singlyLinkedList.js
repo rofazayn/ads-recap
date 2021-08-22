@@ -121,12 +121,12 @@ class SinglyLinkedList {
   }
 
   set(idx, val) {
-    // find node
-    let node = this.get(idx);
+    // we can use get method to set a value of a node
+    let foundNode = this.get(idx);
 
     // if node exists update its value
-    if (node) {
-      node.val = val;
+    if (foundNode) {
+      foundNode.val = val;
       return true;
     }
 
