@@ -104,7 +104,7 @@ class SinglyLinkedList {
 
   get(idx) {
     // check if index is in range
-    if (idx < 0 || idx >= length) return null;
+    if (idx < 0 || idx >= this.length) return null;
 
     // use a counter to reach needed node
     let counter = 0;
@@ -112,7 +112,7 @@ class SinglyLinkedList {
 
     // loop through list until you reach node with specified index
     while (idx !== counter) {
-      current = current.next();
+      current = current.next;
       counter++;
     }
 
@@ -145,13 +145,15 @@ class SinglyLinkedList {
     // otherwise we create a node and we properly set it in list
     let newNode = new Node(val);
     // find the node at the given index - 1
-    let prev = this.find(idx - 1);
+    let prev = this.get(idx - 1);
     // store node at the given index in memory
     let temp = prev.next;
     // point the prev's next to the inserted node
     prev.next = newNode;
     // point the inserted node's next to temp
     newNode.next = temp;
+    // increase length
+    this.length++;
 
     return true;
   }
