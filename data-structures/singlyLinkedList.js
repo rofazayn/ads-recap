@@ -157,6 +157,33 @@ class SinglyLinkedList {
 
     return true;
   }
+
+  /**
+   *
+   * @param {number} idx the index of the node to remove
+   * @returns the removed node if it exists otherwise undefined
+   */
+  remove(idx) {
+    // remove takes an index and remove value from that index
+    // then it patches the list
+
+    // handle edge cases
+    if (idx < 0 || idx > this.length) return undefined;
+    if (idx === 0) return !!this.shift();
+    if (idx === this.length - 1) return !!this.pop();
+
+    // get the previous node
+    let prev = this.get(idx - 1);
+    // get the node you are about to remove
+    let removed = prev.next;
+
+    // set previous node's next to removed node's next node
+    // this will remove the node
+    prev.next = removed.next;
+
+    // now return the removed node
+    return removed;
+  }
 }
 
 // create a singly linked list
