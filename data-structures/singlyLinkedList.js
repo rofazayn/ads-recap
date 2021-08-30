@@ -168,9 +168,9 @@ class SinglyLinkedList {
     // then it patches the list
 
     // handle edge cases
-    if (idx < 0 || idx > this.length) return undefined;
-    if (idx === 0) return !!this.shift();
-    if (idx === this.length - 1) return !!this.pop();
+    if (idx < 0 || idx >= this.length) return undefined;
+    if (idx === 0) return this.shift();
+    if (idx === this.length - 1) return this.pop();
 
     // get the previous node
     let prev = this.get(idx - 1);
@@ -183,6 +183,42 @@ class SinglyLinkedList {
 
     // now return the removed node
     return removed;
+  }
+
+  reverse() {
+    // reverse method reverses the order of nodes
+    // save head as current node
+    let current = this.head;
+    // swap head and tail
+    this.head = this.tail;
+    this.tail = current;
+    // declare prev and next control variables
+    let next = null;
+    let prev = null;
+
+    // loop through list
+    for (let i = 0; i < this.length; i++) {
+      // save current next node in next variable
+      next = current.next;
+      // swap next with prev
+      current.next = prev;
+      // set prev to current node
+      prev = current;
+
+      // swap current with next node
+      current = next;
+    }
+  }
+
+  print() {
+    const arr = [];
+    let current = this.head;
+    while (current) {
+      arr.push(current.val);
+      current = current.next;
+    }
+
+    console.log(arr);
   }
 }
 
